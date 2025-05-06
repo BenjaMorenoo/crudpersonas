@@ -72,4 +72,14 @@ public class PersonaRepostory {
         }
         return "Persona no encontrada";
     }
+
+    public Persona readxRut(String rut){
+        for (Persona persona : personas) {
+            if(persona.getRut().equals(rut)){
+                return persona;
+            }
+        }
+        return null;
+    }
+
 }

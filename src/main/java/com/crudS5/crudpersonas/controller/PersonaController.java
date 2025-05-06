@@ -53,6 +53,12 @@ public class PersonaController {
     public String deletePersona(@PathVariable int id){
         return personaService.eliminarPersona(id);
     }
+
+    @GetMapping("/rut={rut}")
+    public Persona getPersona(@PathVariable String rut) {
+        return personaService.buscarxRut(rut);
+    }
+    
 }
 
 

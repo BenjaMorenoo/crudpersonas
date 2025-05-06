@@ -32,4 +32,8 @@ public class PersonaService {
     public String eliminarPersona(int id){
         return personaRepostory.delete(id);
     }
+
+    public Persona buscarxRut(String rut){
+        return personaRepostory.readxRut(rut);
+    }
 }
